@@ -10,9 +10,24 @@ header {
     right: 0;
     z-index: 1;
     margin-bottom: 30px;
-
-    background-color: var(--orange);
+    background-color:rgb(255, 102, 0);
     box-shadow: 0 1px 3px #666;
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 0;
 }
 
 /* Utilities */
@@ -21,14 +36,116 @@ header {
     margin: 0 auto;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex-basis: calc( 100% / 3 - 30px / 3 );
+}
+
+.price {
+    color: red;
+}
+
+.brand .del .price {
+    font-size: 10px;
+}
+
+.article {
+    font-size:uppercase;
+}
+
 /* Header */
 .navbar {
     height: 80px;
+    padding: 10px 0;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
+.navbar ul {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar-R ul {
+    justify-content: flex-end;
+}
 .navbar > div {
-    border: 2px dashed white;
     flex-basis: calc(100/3);
 }
 
+#logo {
+    height: 30px;
+    margin: 0 auto;
+}
+
+/* Card */
+
+.card-img img:last-of-type {
+    display:none;
+}
+
+.card-img:hover img:last-of-type {
+    display: block;
+}
+
+.card-img:hover img:first-child {
+    display: none;
+}
+
+.card-img {
+    position: relative;
+}
+
+/* Favourite */
+.favourite {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: #fff;
+}
+
+.favourite:hover {
+    color: red;
+}
+
+/* Card-Tag */
+.card-img .card-tag {
+    position: absolute;
+    left: 0;
+    right:0;
+    bottom: 32px;
+}
+
+.tag {
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.tag-discount {
+    background-color: red;
+}
+
+.tag-attribute {
+    background-color: green;
+}
+
+/* Card Text */
+.card-text {
+    padding: 5px 0;
+}
