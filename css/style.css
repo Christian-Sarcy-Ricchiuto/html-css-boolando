@@ -27,7 +27,18 @@ ul {
 a {
     text-decoration: none;
     color: #fff;
-    padding: 10px 0;
+    padding: 0 0;
+}
+
+main {
+    margin-bottom: 50px;
+}
+
+h4 {
+    color: #fff;
+    font-size: small;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 
 /* Utilities */
@@ -49,17 +60,25 @@ a {
 
 .price {
     color: red;
+    font-weight: 600;
 }
 
-.brand .del .price {
+.brand.del {
     font-size: 10px;
+    font-weight: 400;
 }
 
 .article {
     font-size:uppercase;
+    font-weight: 600;
 }
 
 /* Header */
+
+footer {
+    position: sticky;
+    background-color: black;
+}
 .navbar {
     height: 80px;
     padding: 10px 0;
@@ -147,5 +166,30 @@ a {
 
 /* Card Text */
 .card-text {
-    padding: 5px 0;
+    padding: 3px 0;
+}
+/* Footer */
+
+.footer {
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    background-color: black;
+    margin-top: 60px;
+    }
+
+
+.footer-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.footer-navbar ul {
+    display: flex;
+    gap: 10px;
+    padding-inline-start: 0;
+    font-size: small;
 }
